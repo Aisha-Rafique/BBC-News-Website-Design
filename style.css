@@ -1,4 +1,50 @@
-body{
+body {
     padding: 0;
     margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.outer {
+    width: 1300px;
+    height: 100%;
+    margin: 0 150px;
+}
+
+.header {
+    width: 100%;
+}
+
+.logo {
+    width: 10%;
+    float: left;
+}
+
+.logo>h1>span {
+    background-color: #000000;
+    color: #ffffff;  
+    font-size: 30px;
+    padding: 1px;  
+}
+
+.nav {
+    width: 85%;
+}
+
+.nav>ul>li {
+    list-style-type: none;
+    float: left;
+    border-right: 1px solid #bbbbbb;
+    padding: 10px 20px;
+}
+
+.search {
+    float: right;
 }
