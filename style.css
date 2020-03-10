@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Raleway';
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -9,13 +10,17 @@ h1,h2,h3,h4,h5,h6 {
 
 a {
     text-decoration: none;
-    color: #000000;
 }
 
-.outer {
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.inner {
     width: 1300px;
-    height: 100%;
-    margin: 0 150px;
+    margin: 0 auto;
 }
 
 .header {
@@ -27,24 +32,67 @@ a {
     float: left;
 }
 
+.logo h1 {
+    height: 2px;
+}
+
 .logo>h1>span {
     background-color: #000000;
     color: #ffffff;  
-    font-size: 30px;
-    padding: 1px;  
+    font-size: 25px;
+    padding: 1px;
 }
 
-.nav {
+.header>.nav {
     width: 85%;
 }
 
-.nav>ul>li {
+.header .nav>ul>li {
     list-style-type: none;
     float: left;
     border-right: 1px solid #bbbbbb;
     padding: 10px 20px;
 }
 
+.header .nav ul li a {
+    font-size: 14px;
+    color: #000000;
+}
+
 .search {
     float: right;
+    background-color: #E4E4E4;
+    margin: 10px 15px 0 0;
+    padding: 2px 5px;
+}
+
+.search input {
+    border: none;
+    background-color: #E4E4E4;
+}
+
+.below-header {
+    background-color: #bb1919;
+}
+
+.below-header h1 {
+    padding: 10px;
+    color: #ffffff;
+}
+
+.below-header ul {
+    padding: 10px;
+}
+
+.below-header li {
+    list-style-type: none;
+    float: left;
+    border-right: 1px solid #bbbbbb;
+    padding: 3px 10px;
+    font-size: 14px;
+}
+
+.below-header .nav ul li a{
+    color: #ffffff;
+    
 }
