@@ -12,10 +12,23 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .clearfix {
     content: "";
     clear: both;
     display: table;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
 }
 
 .inner {
@@ -43,7 +56,7 @@ a {
     padding: 1px;
 }
 
-.header>.nav {
+.header .nav {
     width: 85%;
 }
 
@@ -70,7 +83,8 @@ a {
     background-color: #000000;
     color: #ffffff;
     border-radius: 60px;
-    padding: 3px 5px;
+    padding: 2px 5px;
+    font-size: 12px;
 }
 
 .header .nav ul li:first-child a {
@@ -102,29 +116,125 @@ a {
 .below-header h1 {
     padding: 10px;
     color: #ffffff;
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 .below-header ul {
-    padding: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 .below-header li {
     list-style-type: none;
     float: left;
-    border-right: 1px solid #bbbbbb;
-    padding: 3px 10px;
     font-size: 14px;
 }
 
-.below-header .nav ul li:last-child{
+.below-header .nav ul li:last-child a{
     border-right: none;
 }
 
 .below-header .nav ul li a{
     color: #ffffff;   
+    border-right: 1px solid #696868;
+    padding: 3px 10px;
+    display: inline-block;
 }
 
 .active {
-    margin-top: 2px;
     border-bottom: 3px solid #ffffff;
+}
+
+.row {
+    margin: 15px 0 0 0;
+}
+
+.headline {
+    width: 55%;
+    margin: 0 10px 0 5px;
+}
+
+.headline a>.left {
+    width: 35%;
+}
+
+.headline a {
+    color: #000000;
+}
+
+.headline span {
+    color: #bb1919;   
+}
+
+.headline i {
+    margin-right: 10px;
+}
+
+.headline p {
+    font-size: 14px;
+    color: #696868;
+}
+
+.headline img {
+    
+}
+
+.headline .news {
+    display: inline-block;
+    width: 100%;
+    margin-left: 18px;
+}
+
+.headline .news ul {
+    margin-top: 10px;
+    padding: 0;
+}
+
+.headline .news ul li {
+    float: left;
+    margin-right: 70px;
+}
+
+.headline .news ul li:last-child {
+    margin: 0;
+}
+
+.headline .news ul li a {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.col {
+    width: 18%;
+    margin: 0 10px;
+}
+
+.col h3 {
+    color: #000000;
+    margin-top: 5px;
+    font-size: 16px;
+}   
+
+.col p {
+    font-size: 14px;
+    color: #696868;
+}
+
+.col ul {
+    margin: 0;
+    padding: 0;
+}
+
+.col .breadcrumbs ul li {
+    float: left;
+    list-style: none;
+    color: #504f4f;
+    border-right: 1px solid #d3d0d0;
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+.col .breadcrumbs ul li:last-child {
+    border-right: none; 
 }
