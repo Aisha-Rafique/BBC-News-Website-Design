@@ -152,7 +152,6 @@ img {
 
 .headline {
     width: 55%;
-    margin: 0 10px 0 5px;
 }
 
 .headline a>.left {
@@ -183,7 +182,6 @@ img {
 .headline .news {
     display: inline-block;
     width: 100%;
-    margin-left: 18px;
 }
 
 .headline .news ul {
@@ -206,8 +204,20 @@ img {
 }
 
 .col {
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.col:first-child {
+    padding-left: 0;
+}
+
+.col:last-child {
+    padding-right: 0;
+}
+
+.col-18 {
     width: 18%;
-    margin: 0 10px;
 }
 
 .col h3 {
@@ -237,4 +247,26 @@ img {
 
 .col .breadcrumbs ul li:last-child {
     border-right: none; 
+}
+
+.poster {
+    position: relative;
+    width: 19%;
+}
+
+.poster img { 
+    box-sizing: border-box;
+    height: 266px;
+}
+
+.poster h3 {
+    position: absolute;
+}
+
+.news-lines {
+    margin-top: 10px;
+}
+
+.news-lines:first-child {
+    margin-top: 0;
 }
